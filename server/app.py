@@ -19,6 +19,7 @@ app.json.compact = False
 migrate = Migrate(app, db)
 
 db.init_app(app)
+# initialize restful API
 api = Api(app)
 
 
