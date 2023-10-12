@@ -106,6 +106,8 @@ class ActivityItem(Resource):
 
 api.add_resource(ActivityItem, '/activities/<int:id>')
 
+# creates new /signups for an existing Camper/Activity (accepts those and time) returns affiliated data and 201 else 400
+
 
 class SignupItem(Resource):
     def post(self):
